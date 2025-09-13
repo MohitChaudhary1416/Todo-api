@@ -13,7 +13,7 @@ class TodoGet(GenericAPIView):
         data = Todo.objects.all()
         serializer = TodoSerializer(data,many = True)
         return Response({
-            "Message":"Data Fetch Sucessfully",
+            "Message":"Content Fetch Sucessfully",
             "data":serializer.data
         },status.HTTP_200_OK)
     
